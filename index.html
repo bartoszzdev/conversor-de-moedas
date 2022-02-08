@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+    <head>
+        <meta tag="utf-8">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Azeret+Mono&display=swap" rel="stylesheet"> 
+        <link rel="stylesheet" href="css/style.css">
+        <link rel="shortcut icon" type="image-x/png" href="images/logo.png">
+        <title>Projeto conversor de moedas</title>
+    </head>
+
+    <body>
+
+        <div class="container">
+            <h1 class="page-title">
+                Conversor de moedas
+            </h1>
+
+            <p class="page-subtitle">
+                Descubra os valores em Dólar US$
+            </p>
+
+            <img src="images/logo.png" class="page-logo">
+
+            <labe for="valor">Insira o valor em real:</labe><br>
+            <input type="number" id="valor"><br>
+
+            <div>
+                <button class="btn" type="submit" onclick="converter()">
+                    Converter
+                </button>
+
+                <button class="btn" type="button" onclick="verificarCotacao()">
+                    Cotação
+                </button>
+            </div>
+ 
+            <div id="result"></div>
+        </div>
+
+        <script src="js/script.js"></script>
+    </body>
+</html>
